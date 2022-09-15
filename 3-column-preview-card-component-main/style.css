@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-orange: #e28625;
+  --color-cyan: #006971;
+  --color-dark-cyan: #004140;
+  --color-whitish: #f2f2f2;
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--color-whitish);
+  margin-right: 15.8rem;
+}
+
+p {
+  font-family: "Lexend Deca";
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 167%;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  border: none;
+  border-radius: 25px;
+  background-color: var(--color-whitish);
+  padding: 1.8rem 3.4rem;
+  cursor: pointer;
+  font-family: "Lexend Deca";
+}
+
+.btn:hover,
+.btn:active {
+  box-shadow: inset 0 0 0 1px #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 90rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.icon {
+  margin-top: 4.8rem;
+}
+
+.card-1 {
+  background-color: var(--color-orange);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.card-2 {
+  background-color: var(--color-cyan);
+}
+
+.card-3 {
+  background-color: var(--color-dark-cyan);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card h1 {
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.card p {
+  padding-bottom: 6rem;
+}
+
+.btn {
+  margin-bottom: 4rem;
+}
+
+.btn-1 {
+  color: var(--color-orange);
+}
+
+.btn-2 {
+  color: var(--color-cyan);
+}
+
+.btn-3 {
+  color: var(--color-dark-cyan);
+}
+
+/*******************/
+/* BELOW 900px (Tablets) */
+/*******************/
+
+@media (max-width: 57em) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 4rem 4rem;
+  }
+
+  .card-1,
+  .card-3 {
+    border-radius: 0px;
+  }
+}
